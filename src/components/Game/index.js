@@ -22,6 +22,20 @@ class Game extends Component {
     </div>
   )
 
+  scoreview = () => {
+    const {score} = this.state
+
+    return (
+      <div>
+        <h1>Rock Paper Scissors</h1>
+        <div>
+          <p>Score</p>
+          <p>{score}</p>
+        </div>
+      </div>
+    )
+  }
+
   renderGameView = () => {
     const {choicesList} = this.props
     const {id, imageUrl} = choicesList
